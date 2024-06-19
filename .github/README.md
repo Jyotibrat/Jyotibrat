@@ -44,7 +44,7 @@ A brief description of the project.
 
 ## 🐍 Snake Game
 
-![snake gif](https://github.com/Jyotibrat/Jyotibrat/blob/output/github-contribution-grid-snake.svg)
+<img src="https://raw.githubusercontent.com/Jyotibrat/Jyotibrat/output/snake.svg" alt="Snake animation" />
 
 ## 📊 Metrics
 
