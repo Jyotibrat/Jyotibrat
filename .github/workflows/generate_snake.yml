@@ -15,17 +15,20 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v2
 
-      - name: Navigate to src directory
-        run: cd src
-
       - name: Generate snake animation
         uses: Platane/snk@v2
         with:
           github_user_name: Jyotibrat
-          outputs: ../dist/snake.svg
+          outputs: dist/snake.svg
+
+      - name: Create output directory
+        run: mkdir -p dist
+
+      - name: Move snake.svg to output directory
+        run: mv snake.svg dist/snake.svg
 
       - name: Push the content to the output branch
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ../dist
+          github_token: ${{ secrets.ACTIONS_PAT }}
+          publish_dir: dist
