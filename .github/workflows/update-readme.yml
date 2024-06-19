@@ -18,7 +18,7 @@ jobs:
 
     - name: Commit and push changes
       env:
-        ACTIONS_PAT: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        ACTIONS_PAT: ${{ secrets.ACTIONS_PAT }}
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
