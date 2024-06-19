@@ -3,7 +3,7 @@ from datetime import datetime
 
 GITHUB_API = "https://api.github.com"
 USER = "Jyotibrat"
-TOKEN = "YOUR_GITHUB_TOKEN"
+TOKEN = "ACTIONS_PAT"
 
 def get_repos():
     url = f"{GITHUB_API}/users/{USER}/repos"
