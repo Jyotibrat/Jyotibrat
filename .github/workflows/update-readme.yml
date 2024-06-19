@@ -16,21 +16,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Navigate to src directory
-        run: cd src
-
       - name: Setup Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-
-      - name: Install dependencies
         run: |
+          cd src
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Run script
-        run: python main.py
+        run: cd src && python main.py
 
       - name: Commit metrics
         run: |
@@ -40,4 +33,4 @@ jobs:
           git commit -m 'Generate metrics'
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACTIONS_PAT }}
