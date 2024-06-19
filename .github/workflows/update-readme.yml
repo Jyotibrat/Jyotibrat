@@ -1,27 +1,43 @@
-name: Update Repository README
+name: Metrics
 
 on:
+  schedule: # Runs every day at midnight
+    - cron: "0 0 * * *"
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
-  update-readme:
+  metrics:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
-    - name: Copy repository README to root
-      run: cp .github/README.md README.md
+      - name: Navigate to src directory
+        run: cd src
 
-    - name: Commit and push changes
-      env:
-        ACTIONS_PAT: ${{ secrets.ACTIONS_PAT }}
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add README.md
-        git commit -m 'Update repository README'
-        git push https://x-access-token:${{ secrets.ACTIONS_PAT }}@github.com/${{ github.repository }}.git
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run script
+        run: python main.py
+
+      - name: Commit metrics
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add github-metrics.svg
+          git commit -m 'Generate metrics'
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
