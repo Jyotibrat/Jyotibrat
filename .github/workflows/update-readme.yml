@@ -1,36 +1,45 @@
-name: Metrics
+name: Update README
 
 on:
-  schedule: # Runs every day at midnight
-    - cron: "0 0 * * *"
   push:
     branches:
       - main
-  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at midnight
 
 jobs:
-  metrics:
+  update-readme:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+    - name: Checkout repository content
+      uses: actions/checkout@v2
 
-      - name: Setup Python
-        run: |
-          cd src
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+    - name: Determine README to use
+      id: readme
+      run: |
+        if [[ "${{ github.event_name }}" == "push" ]]; then
+          echo "profile_readme=src/README.md" >> $GITHUB_ENV
+          echo "repo_readme=.github/Readme.md" >> $GITHUB_ENV
+        else
+          echo "profile_readme=.github/Readme.md" >> $GITHUB_ENV
+          echo "repo_readme=src/README.md" >> $GITHUB_ENV
+        fi
 
-      - name: Run script
-        run: cd src && python main.py
+    - name: Copy profile README
+      run: |
+        cp ${{ env.profile_readme }} README.md
 
-      - name: Commit metrics
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add github-metrics.svg
-          git commit -m 'Generate metrics'
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'Jyotibrat'
+        git config --global user.email 'jyotibratb@gmail.com'
+        git add README.md
+        if ! git diff-index --quiet HEAD; then
+          git commit -m "Update README.md based on workflow trigger"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACTIONS_PAT }}
+        else
+          echo "No changes to commit"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
