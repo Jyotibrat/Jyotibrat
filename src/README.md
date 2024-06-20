@@ -1,8 +1,12 @@
+<div align="center">
+  
 # Hi there, I'm Jyotibrat 👋
 
 Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning. My passion for coding, automation, and football drives me to explore and innovate in various tech domains.
 
-## 🚀 About Me
+<div align="left">
+
+  ## 🚀 About Me
 
 - 🔭 I’m currently working on mastering **Data Structures and Algorithms** and **Web Development**.
 - 🌱 I’m learning at least 10 new programming languages in 2024.
@@ -17,32 +21,63 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 - **DevOps & Automation**: Docker, Kubernetes, GitHub Actions.
 - **Databases**: MySQL, MongoDB.
 
+<div align="left">
+  
+<div align="center">
+  
 ## 🔧 Projects & Automation Workflows
 
-### [Project Name](https://github.com/Jyotibrat/ProjectName)
-A brief description of the project.
-- **Technologies Used**: List of technologies.
-- **Features**: Key features of the project.
-- **Automation**: Describe any automation or workflows implemented.
+<div align="center">
 
-### [Another Project](https://github.com/Jyotibrat/AnotherProject)
-A brief description of the project.
-- **Technologies Used**: List of technologies.
-- **Features**: Key features of the project.
-- **Automation**: Describe any automation or workflows implemented.
+<table>
+  <tr>
+    <td width="50%" style="vertical-align: top;">
+      <div align="left">
+        <h3><a href="https://github.com/Jyotibrat/ProjectName">Project Name</a></h3>
+        A brief description of the project.
+        <ul>
+          <li><strong>Technologies Used:</strong> List of technologies.</li>
+          <li><strong>Features:</strong> Key features of the project.</li>
+          <li><strong>Automation:</strong> Describe any automation or workflows implemented.</li>
+        </ul>
+      </div>
+    </td>
+    <td width="50%" style="vertical-align: top;">
+      <div align="left">
+        <h3><a href="https://github.com/Jyotibrat/AnotherProject">Project Name</a></h3>
+        A brief description of the project.
+        <ul>
+          <li><strong>Technologies Used:</strong> List of technologies.</li>
+          <li><strong>Features:</strong> Key features of the project.</li>
+          <li><strong>Automation:</strong> Describe any automation or workflows implemented.</li>
+        </ul>
+      </div>
+    </td>
+  </tr>
+</table>
+
 
 ## 🌐 Connect with Me
 
-- **LinkedIn**: [Jyotibrat's LinkedIn](https://www.linkedin.com/in/jyotibrat)
-- **Twitter**: [Jyotibrat's Twitter](https://twitter.com/jyotibrat)
-- **Email**: [jyotibrat@example.com](mailto:jyotibrat@example.com)
+<p align="center">
+  <a href="https://twitter.com/b_jyotibrat" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="b_jyotibrat" height="30" width="40" /></a>
+  <a href="https://linkedin.com/in/bindupautra jyotibrat" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="bindupautra jyotibrat" height="30" width="40" /></a>
+  <a href="https://stackoverflow.com/users/22426857" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="22426857" height="30" width="40" /></a>
+  <a href="https://kaggle.com/bindupautrajyotibrat" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="bindupautrajyotibrat" height="30" width="40" /></a>
+  <a href="https://medium.com/@bjyotibrat" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@bjyotibrat" height="30" width="40" /></a>
+  <a href="https://www.codechef.com/users/bjyotibrat" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" alt="bjyotibrat" height="30" width="40" /></a>
+  <a href="https://www.hackerrank.com/bjyotibrat" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="bjyotibrat" height="30" width="40" /></a>
+  <a href="https://codeforces.com/profile/bjyotibrat" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg" alt="bjyotibrat" height="30" width="40" /></a>
+  <a href="https://www.leetcode.com/bjyotibrat" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="bjyotibrat" height="30" width="40" /></a>
+  <a href="https://www.hackerearth.com/@bjyotibrat" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg" alt="@bjyotibrat" height="30" width="40" /></a>
+</p>
 
 ## 📈 GitHub Stats
 
 ![Jyotibrat's GitHub stats](https://github-readme-stats.vercel.app/api?username=Jyotibrat&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Jyotibrat&layout=compact&theme=radical)
 
-<div align="center">
+
 
 ## 🐍 Snake Game
 
