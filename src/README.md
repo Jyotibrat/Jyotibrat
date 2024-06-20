@@ -42,6 +42,8 @@ A brief description of the project.
 ![Jyotibrat's GitHub stats](https://github-readme-stats.vercel.app/api?username=Jyotibrat&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Jyotibrat&layout=compact&theme=radical)
 
+<div align="center">
+
 ## 🐍 Snake Game
 
 <img src="https://raw.githubusercontent.com/Jyotibrat/Jyotibrat/output/snake.svg" alt="Snake animation" />
@@ -50,9 +52,12 @@ A brief description of the project.
 
 <img src="./github-metrics.svg" alt="Metrics" width="100%">
 
+<div align="center">
+
 ## 💡 Fun Facts
 
 - 🎤 I enjoy rapping and often find myself drawing in my free time.
 - 🌍 Based in India, I love exploring new technologies and learning new things.
 
+---
 Feel free to explore my repositories and connect with me for any collaboration or discussion about tech, coding, or football!
