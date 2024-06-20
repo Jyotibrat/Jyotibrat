@@ -1,15 +1,22 @@
 name: Metrics
+
 on:
   schedule: [{cron: "0 * * * *"}]
   workflow_dispatch:
-  push: {branches: ["master", "main"]}
+  push:
+    branches: ["master", "main"]
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Generate GitHub metrics
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           user: Jyotibrat
@@ -62,3 +69,14 @@ jobs:
           plugin_stargazers_days: 14
           plugin_tweets: yes
           plugin_tweets_limit: 2
+          output_file: README.md  # Ensure the output file is set to README.md
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'Jyotibrat'
+          git config --global user.email 'jyotibratb@gmail.com'
+          git add README.md
+          git commit -m "Update metrics"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
