@@ -98,8 +98,8 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 - 🌍 Based in India, I love exploring new technologies and learning new things.
 
 <div align="center">
-  <a href="https://open.spotify.com/user/knights">
-    <img src="https://spotify-recently-played-readme.vercel.app/api?user=knights&count=5" alt="Spotify recently played"  />
+  <a href="https://open.spotify.com/user/o9kt4p73vbph2wbosa8e41obu">
+    <img src="https://spotify-recently-played-readme.vercel.app/api?user=o9kt4p73vbph2wbosa8e41obu&count=5" alt="Spotify recently played"  />
   </a>
 </div>
 
