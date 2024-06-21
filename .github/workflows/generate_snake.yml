@@ -29,8 +29,8 @@ jobs:
 
       - name: Commit and push snake.svg
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.name 'Jyotibrat'
+          git config --global user.email 'jyotibratb@gmail.com'
           git add src/snake.svg
           git commit -m "Update snake.svg"
           git push
