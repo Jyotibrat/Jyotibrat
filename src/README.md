@@ -97,5 +97,11 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 - 🎤 I enjoy rapping and often find myself drawing in my free time.
 - 🌍 Based in India, I love exploring new technologies and learning new things.
 
+<div align="center">
+  <a href="https://open.spotify.com/user/knights">
+    <img src="https://spotify-recently-played-readme.vercel.app/api?user=knights&count=5" alt="Spotify recently played"  />
+  </a>
+</div>
+
 ---
 Feel free to explore my repositories and connect with me for any collaboration or discussion about tech, coding, or football!
