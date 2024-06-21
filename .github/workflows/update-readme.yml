@@ -1,38 +1,47 @@
-name: Generate snake animation
+name: Update README
 
 on:
-  schedule: # execute every 12 hours
-    - cron: "0 */12 * * *" # Correct cron format for every 12 hours
-
-  workflow_dispatch:
-
   push:
     branches:
-    - master
+          - main
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at midnight
 
 jobs:
-  generate:
-    permissions:
-      contents: write
+  update-readme:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout repository content
+      uses: actions/checkout@v2
 
-      - name: Generate snake.svg
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: Jyotibrat
-          outputs: src/snake.svg?palette=github-dark 
+    - name: Determine README to use
+      id: readme
+      run: |
+        if [[ "${{ github.event_name }}" == "push" ]]; then
+          echo "profile_readme=src/README.md" >> $GITHUB_ENV
+          echo "repo_readme=.github/Readme.md" >> $GITHUB_ENV
+        else
+          echo "profile_readme=.github/Readme.md" >> $GITHUB_ENV
+          echo "repo_readme=src/README.md" >> $GITHUB_ENV
+        fi
+        
+    - name: Create README symlink if not exists
+      run: |
+        if [ ! -L README.md ]; then
+          ln -s src/README.md README.md
+        fi
 
-      - name: Commit and push snake.svg
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add src/snake.svg
-          git commit -m "Update snake.svg"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+    - name: Commit and push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --global user.name 'Jyotibrat'
+        git config --global user.email 'jyotibratb@gmail.com'
+        git add README.md
+        if ! git diff-index --quiet HEAD; then
+          git commit -m "Update README.md based on workflow trigger"
+          git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Jyotibrat/Jyotibrat.git" HEAD:main
+        else
+          echo "No changes to commit"
+        fi
