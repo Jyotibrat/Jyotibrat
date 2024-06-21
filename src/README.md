@@ -81,7 +81,7 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 
 ## 🐍 Snake Game
 
-<img src="https://raw.githubusercontent.com/Jyotibrat/Jyotibrat/src/snake.svg" alt="Snake animation" />
+<img src="src/snake.svg" alt="Snake animation" />
 
 ## 📊 Metrics
 
