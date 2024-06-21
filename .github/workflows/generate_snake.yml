@@ -1,14 +1,12 @@
 name: Generate snake animation
 
 on:
-  schedule: # execute every 12 hours
+  schedule:
     - cron: "0 */12 * * *" # Correct cron format for every 12 hours
-
   workflow_dispatch:
-
   push:
     branches:
-    - master
+      - master
 
 jobs:
   generate:
@@ -25,7 +23,10 @@ jobs:
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: Jyotibrat
-          outputs: src/snake.svg?palette=github-dark # Generate in src directory
+          outputs: dist/snake.svg?palette=github-dark # Default output directory
+
+      - name: Move snake.svg to src directory
+        run: mv dist/snake.svg src/snake.svg
 
       - name: Commit and push snake.svg
         run: |
