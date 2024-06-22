@@ -84,11 +84,11 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 
 ## 🐍 Snake Game
 
-<img src="src/snake.svg" alt="Snake animation" />
+<img src="src/Assets/snake.svg" alt="Snake animation" />
 
 ## 📊 Metrics
 
-<img src="src/github-metrics.svg" alt="Metrics" width="100%">
+<img src="src/Assets/github-metrics.svg" alt="Metrics" width="100%">
 
 <div align="center">
 
