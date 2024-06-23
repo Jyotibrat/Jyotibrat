@@ -2,7 +2,7 @@ name: Metrics
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 */12 * * *"
   workflow_dispatch:
   push:
     branches: ["main"]
@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0  # Fetch full history for correct branching
 
       - name: Generate GitHub metrics
-        uses: Jyotibrat/metrics@main
+        uses: Jyotibrat/metrics@master
         with:
           output_action: none
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
@@ -27,6 +27,7 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Calcutta
+          config_display: regular
           plugin_achievements: yes
           plugin_achievements_display: detailed
           plugin_achievements_secrets: yes
