@@ -69,7 +69,7 @@ jobs:
           plugin_stargazers_days: 14
           plugin_tweets: yes
           plugin_tweets_limit: 2
-          output_file: src/README.md  # Output to src/README.md
+          output_file: src/Assets/README.md  # Output to src/README.md
 
       - name: Commit and push changes
         env:
