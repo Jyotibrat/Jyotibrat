@@ -19,20 +19,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Create output directory
+        run: mkdir -p src/Assets
+
       - name: Generate snake.svg
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: Jyotibrat
           outputs: dist/snake.svg?palette=github-dark # Default output directory
 
-      - name: Move snake.svg to src directory
-        run: mv dist/snake.svg src/snake.svg
+      - name: Move snake.svg to src/Assets directory
+        run: mv dist/snake.svg src/Assets/snake.svg
 
       - name: Commit and push snake.svg
         run: |
           git config --global user.name 'Jyotibrat'
           git config --global user.email 'jyotibratb@gmail.com'
-          git add src/snake.svg
+          git add src/Assets/snake.svg
           git commit -m "Update snake.svg"
           git push
         env:
