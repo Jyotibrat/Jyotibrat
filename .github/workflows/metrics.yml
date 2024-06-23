@@ -77,7 +77,7 @@ jobs:
         run: |
           git config --global user.name 'Jyotibrat'
           git config --global user.email 'jyotibratb@gmail.com'
-          git add src/README.md
+          git add src/Assets/README.md
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
