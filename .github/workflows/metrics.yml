@@ -72,7 +72,10 @@ jobs:
           plugin_stargazers_days: 14
           plugin_tweets: yes
           plugin_tweets_limit: 2
-          output_file: src/Assets/github-metrics.svg  # Output directly to src/Assets/github-metrics.svg
+          output_file: /tmp/github-metrics.svg  # Output to a temporary location
+
+      - name: Move GitHub metrics to src/Assets
+        run: mv /tmp/github-metrics.svg src/Assets/github-metrics.svg
 
       - name: Commit and push changes
         env:
@@ -86,4 +89,3 @@ jobs:
           else
             git commit -m "Update metrics"
             git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Jyotibrat/Jyotibrat.git" HEAD:main
-
