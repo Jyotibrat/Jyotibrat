@@ -72,7 +72,10 @@ jobs:
           plugin_stargazers_days: 14
           plugin_tweets: yes
           plugin_tweets_limit: 2
-          output_file: src/Assets/github-metrics.svg  # Output to src/Assets/github-metrics.svg
+          output_file: github-metrics.svg  # Default output file
+
+      - name: Move github-metrics.svg to src/Assets directory
+        run: mv github-metrics.svg src/Assets/github-metrics.svg
 
       - name: Commit and push changes
         env:
