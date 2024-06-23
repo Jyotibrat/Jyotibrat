@@ -15,6 +15,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Create output directory
+        run: mkdir -p src/Assets
+
       - name: Generate GitHub metrics
         uses: lowlighter/metrics@latest
         with:
@@ -69,7 +72,7 @@ jobs:
           plugin_stargazers_days: 14
           plugin_tweets: yes
           plugin_tweets_limit: 2
-          output_file: src/Assets/README.md  # Output to src/README.md
+          output_file: src/Assets/github-metrics.svg  # Output to src/Assets/github-metrics.svg
 
       - name: Commit and push changes
         env:
@@ -77,10 +80,9 @@ jobs:
         run: |
           git config --global user.name 'Jyotibrat'
           git config --global user.email 'jyotibratb@gmail.com'
-          git add src/Assets/README.md
+          git add src/Assets/github-metrics.svg
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
             git commit -m "Update metrics"
             git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Jyotibrat/Jyotibrat.git" HEAD:main
-          fi
