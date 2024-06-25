@@ -19,24 +19,38 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Create output directory
-        run: mkdir -p src/Assets
+      - name: Check if snake.svg exists
+        id: check_file
+        run: |
+          if [ -f src/Assets/snake.svg ]; then
+            echo "File exists" > file_check.txt
+          else
+            echo "File does not exist" > file_check.txt
+          fi
 
-      - name: Generate snake.svg
+      - name: Read file check result
+        id: file_check_result
+        run: cat file_check.txt
+        continue-on-error: true
+
+      - name: Generate snake.svg if it does not exist
+        if: steps.file_check_result.outputs.result == 'File does not exist'
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: Jyotibrat
           outputs: dist/snake.svg?palette=github-dark # Default output directory
 
-      - name: Move snake.svg to src/Assets directory
+      - name: Move snake.svg to src/Assets directory if it does not exist
+        if: steps.file_check_result.outputs.result == 'File does not exist'
         run: mv dist/snake.svg src/Assets/snake.svg
 
-      - name: Commit and push snake.svg
+      - name: Commit and push snake.svg if it does not exist
+        if: steps.file_check_result.outputs.result == 'File does not exist'
         run: |
           git config --global user.name 'Jyotibrat'
           git config --global user.email 'jyotibratb@gmail.com'
           git add src/Assets/snake.svg
-          git commit -m "Update snake.svg"
+          git commit -m "Add snake.svg"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
