@@ -76,13 +76,14 @@ jobs:
           plugin_tweets_limit: 2
 
       - name: Move github-metrics.svg to src/Assets directory
+        id: move
         run: |
           mkdir -p src/Assets  # Ensure directory exists
-          mv /metrics_renders/*.svg src/Assets/
+          mv metrics_renders/*.svg src/Assets/
         continue-on-error: true  # Continue even if no files to move
 
       - name: Commit and push github-metrics.svg
-        if: success() && steps.move.outputs.files-moved == 'true'
+        if: success() && steps.move.outcome == 'success'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
