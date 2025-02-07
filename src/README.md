@@ -124,3 +124,4 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 
 ---
 Feel free to explore my repositories and connect with me for any collaboration or discussion about tech, coding, or football!
+<img src="https://raw.githubusercontent.com/Jyotibrat/Jyotibrat/src/assets/278811221-699f9b27-9f81-4f67-a620-8c4d9395c2e4.svg" alt="Jupyter Notebook" width="24" height="24" />
