@@ -73,9 +73,9 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 
 <div align="center">
 
-| **Project** | **Description** | **Technologies** | **Features** | **Status** |
+| **Project** | **Description** | **Tech Stack** | **Features** | **Status** |
 |-------------|-----------------|------------------|--------------|----------------|
-| [Floor Planning GEN AI](https://github.com/Jyotibrat/Floor-Planning-Gen-AI) | A Generative AI which can generate Floor Planning Images when prompted. | [![My Skills](https://skillicons.dev/icons?i=python&perline=5&theme=light)](https://skillicons.dev) <img src="https://github.com/Jyotibrat/Jyotibrat/blob/main/src/Assets/278811221-699f9b27-9f81-4f67-a620-8c4d9395c2e4.svg" alt="Jupyter Notebook" width="48" height="48"/> | Feature 1, Feature 2 | Ongoing |
+| [Floor Planning GEN AI](https://github.com/Jyotibrat/Floor-Planning-Gen-AI) | A Generative AI which can generate Floor Planning Images when prompted. | [![My Skills](https://skillicons.dev/icons?i=python&perline=5&theme=light)](https://skillicons.dev) <img src="https://github.com/Jyotibrat/Jyotibrat/blob/main/src/Assets/Jupyter.svg" alt="Jupyter Notebook" width="48" height="48"/> <img src="https://github.com/Jyotibrat/Jyotibrat/blob/main/src/Assets/Numpy.png" alt="Numpy" width="48" height="48"/> <img src="https://github.com/Jyotibrat/Jyotibrat/blob/main/src/Assets/Pandas.png" alt="Pandas" width="48" height="48"/> <img src="https://github.com/Jyotibrat/Jyotibrat/blob/main/src/Assets/matplotlib.png" alt="Matplotlib" width="48" height="48"/> | Feature 1, Feature 2 | Ongoing |
 | [MarkView](https://github.com/Jyotibrat/MarkView) | A brief description of the project. | JavaScript, Node.js, MongoDB | Feature 1, Feature 2 | Automated deployment with Docker and Kubernetes |
 
 <div align="center">
