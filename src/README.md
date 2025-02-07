@@ -75,7 +75,7 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 
 | **Project** | **Description** | **Technologies** | **Features** | **Status** |
 |-------------|-----------------|------------------|--------------|----------------|
-| [Floor Planning GEN AI](https://github.com/Jyotibrat/Floor-Planning-Gen-AI) | A Generative AI which can generate Floor Planning Images when prompted. | [![My Skills](https://skillicons.dev/icons?i=python&perline=5&theme=light)](https://skillicons.dev) | Feature 1, Feature 2 | Ongoing |
+| [Floor Planning GEN AI](https://github.com/Jyotibrat/Floor-Planning-Gen-AI) | A Generative AI which can generate Floor Planning Images when prompted. | [![My Skills](https://skillicons.dev/icons?i=python&perline=5&theme=light)](https://skillicons.dev) <img src="https://github.com/Jyotibrat/Jyotibrat/blob/main/src/Assets/278811221-699f9b27-9f81-4f67-a620-8c4d9395c2e4.svg" alt="Jupyter Notebook" width="48" height="48"/> | Feature 1, Feature 2 | Ongoing |
 | [MarkView](https://github.com/Jyotibrat/MarkView) | A brief description of the project. | JavaScript, Node.js, MongoDB | Feature 1, Feature 2 | Automated deployment with Docker and Kubernetes |
 
 <div align="center">
@@ -124,4 +124,3 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 
 ---
 Feel free to explore my repositories and connect with me for any collaboration or discussion about tech, coding, or football!
-<img src="https://raw.githubusercontent.com/Jyotibrat/Jyotibrat/src/assets/278811221-699f9b27-9f81-4f67-a620-8c4d9395c2e4.svg" alt="Jupyter Notebook" width="24" height="24" />
