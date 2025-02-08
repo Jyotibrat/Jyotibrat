@@ -109,7 +109,7 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 
 ## 🐍 Snake Game
 
-![Snake animation](https://github.com/Jyotibrat/Jyotibrat/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://github.com/Jyotibrat/Jyotibrat/blob/main/src/Assets/snake.svg)
 
 <div align="center">
 
