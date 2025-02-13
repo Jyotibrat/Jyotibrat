@@ -127,5 +127,7 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
   </a>
 </div>
 
+![LeetCode Stats](https://leetcard.jacoblin.cool/bjyotibrat?theme=dark&font=Karma)
+
 ---
 Feel free to explore my repositories and connect with me for any collaboration or discussion about tech, coding, or football!
