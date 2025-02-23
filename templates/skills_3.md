@@ -1,4 +1,3 @@
-## 🛠️ Skills & Technologies
 
 ### **Programming Languages**
 - 🐍 Python  
