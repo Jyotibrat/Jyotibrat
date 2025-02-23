@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define paths
-README="src/README.md"   # Adjusted path for README
+README="src/README.md"
 TEMPLATES_DIR="templates"
 
 # Get the total number of skill files
@@ -16,9 +16,15 @@ INDEX=$(( (CURRENT_MIN / 5) % NUM_TEMPLATES + 1 ))
 # Select the corresponding skills file
 SKILLS_FILE="$TEMPLATES_DIR/skills_${INDEX}.md"
 
-# Replace the old skills section in README
-sed -i '/## 🛠️ Skills & Technologies/,$d' "$README"  # Remove existing section
-cat "$SKILLS_FILE" >> "$README"                      # Append new section
+# Extract content before and after the Skills section
+sed -n '1,/## 🛠️ Skills & Technologies/ p' "$README" > temp_readme.md
+echo "" >> temp_readme.md
+cat "$SKILLS_FILE" >> temp_readme.md
+echo "" >> temp_readme.md
+sed -n '/## 🔧 Projects & Automation Workflows/,$ p' "$README" >> temp_readme.md
+
+# Replace old README with updated content
+mv temp_readme.md "$README"
 
 # Commit and push changes
 git config --global user.name "github-actions"
@@ -26,3 +32,4 @@ git config --global user.email "github-actions@github.com"
 git add "$README"
 git commit -m "Updated Skills & Technologies section (auto-update)"
 git push
+
