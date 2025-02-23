@@ -1,4 +1,3 @@
-## 🛠️ Skills & Technologies
 
 | **Category**        | **Technologies** |
 |--------------------|----------------|
