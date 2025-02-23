@@ -15,6 +15,8 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 - 🎤 Fun fact: I enjoy rapping and often find myself drawing in my free time.
 ## 🛠️ Skills & Technologies
 
+## 🛠️ Skills & Technologies
+
 ### **Programming Languages**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 <div align="left">
@@ -67,8 +69,6 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-
-<div align="center">
 
 ## 🔧 Projects & Automation Workflows
 
