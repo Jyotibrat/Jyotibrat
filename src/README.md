@@ -13,8 +13,7 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 - 🤖 I have a keen interest in **Automation and Workflows** to streamline processes and boost productivity.
 - ⚽ When I'm not coding, you’ll find me playing football or indulging in video games.
 - 🎤 Fun fact: I enjoy rapping and often find myself drawing in my free time.
-## 🛠️ Skills & Technologies
-
+<h2 align="center">🛠️ Skills & Technologies</h2>
 
 ### **Programming Languages**
 📝 ![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)  
