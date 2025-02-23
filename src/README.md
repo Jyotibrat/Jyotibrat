@@ -15,8 +15,6 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 - 🎤 Fun fact: I enjoy rapping and often find myself drawing in my free time.
 ## 🛠️ Skills & Technologies
 
-## 🛠️ Skills & Technologies
-
 ### **Programming Languages**
 - 🐍 Python  
 - 🌐 C, C++  
