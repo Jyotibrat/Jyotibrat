@@ -2,32 +2,28 @@ name: Update README
 
 on:
   schedule:
-    - cron: "*/5 * * * *"  # Runs every 5 minutes
-  workflow_dispatch:  # Allows manual trigger
+    - cron: '*/5 * * * *'  # Run every 5 minutes
+  workflow_dispatch:  # Allow manual execution
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-
-      - name: Install dependencies
-        run: pip install random
-
-      - name: Run script
-        run: python update_readme.py
-
-      - name: Commit and push if changed
+      - name: Set Up Git
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git commit -m "Updated README with new skills layout" || echo "No changes to commit"
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+      - name: Rotate Skills Section
+        run: bash scripts/rotate_skills.sh  # Adjusted script path
+
+      - name: Push Changes
+        run: |
+          git add src/README.md
+          git commit -m "Updated Skills & Technologies section"
           git push
+        continue-on-error: true
