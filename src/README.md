@@ -14,6 +14,9 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 - ⚽ When I'm not coding, you’ll find me playing football or indulging in video games.
 - 🎤 Fun fact: I enjoy rapping and often find myself drawing in my free time.
 
+<h2 align="center">🛠️ Skills & Technologies</h2>
+
+
 <!-- SKILLS_SECTION_START -->
 <!-- SKILLS_SECTION_START -->
 
