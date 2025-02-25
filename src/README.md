@@ -18,28 +18,21 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 <!-- SKILLS_SECTION_START -->
 
 ### **Programming Languages**
-- 🐍 Python  
-- 🌐 C, C++  
-- ☕ Java  
-- 💎 Ruby  
-- 📝 HTML, CSS, JavaScript  
+📝 ![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)  
+🖥️ ![C](https://img.shields.io/badge/-C-A8B9CC?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)  
+☕ ![Java](https://img.shields.io/badge/-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)  
 
 ### **Web Development**
-- ⚡ Next.js, Node.js  
-- ⚛️ React, Astro  
-- 🌎 Wix Studio  
+🌎 ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)  
+⚛️ ![React](https://img.shields.io/badge/-React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  
 
 ### **AI & ML**
-- 📊 Pandas  
-- ⚡ Google Colab, Jupyter Notebook  
-
-### **DevOps & Automation**
-- 📜 YAML, Docker  
-- 🤖 GitHub Actions  
+🤖 ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)  
+🚀 ![Google Colab](https://img.shields.io/badge/-Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)  
 
 ### **Databases**
-- 🛢️ MySQL, PostgreSQL  
-- 🚀 Supabase, MongoDB  
+🛢️ ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)  
+<!-- SKILLS_SECTION_END -->
 <!-- SKILLS_SECTION_END -->
 <!-- SKILLS_SECTION_END -->
 <!-- SKILLS_SECTION_END -->
