@@ -444,3 +444,5 @@ Welcome to my GitHub profile! I'm an enthusiastic Computer Science Engineering s
 
 ---
 Feel free to explore my repositories and connect with me for any collaboration or discussion about tech, coding, or football!
+
+[![An image of @jyotibrat's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/jyotibrat)](https://holopin.io/@jyotibrat)
