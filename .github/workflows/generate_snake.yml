@@ -1,8 +1,8 @@
-name: Generate snake animation
+name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 */12 * * *" # Correct cron format for every 12 hours
+    - cron: "0 */12 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -13,44 +13,27 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
-
+    timeout-minutes: 10
+    
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Check if snake.svg exists
-        id: check_file
-        run: |
-          if [ -f src/Assets/snake.svg ]; then
-            echo "File exists" > file_check.txt
-          else
-            echo "File does not exist" > file_check.txt
-          fi
-
-      - name: Read file check result
-        id: file_check_result
-        run: cat file_check.txt
-        continue-on-error: true
-
-      - name: Generate snake.svg if it does not exist
-        if: steps.file_check_result.outputs.result == 'File does not exist'
+        uses: actions/checkout@v4
+        
+      - name: Generate snake animation
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: Jyotibrat
-          outputs: dist/snake.svg?palette=github-dark # Default output directory
-
-      - name: Move snake.svg to src/Assets directory if it does not exist
-        if: steps.file_check_result.outputs.result == 'File does not exist'
-        run: mv dist/snake.svg src/Assets/snake.svg
-
-      - name: Commit and push snake.svg if it does not exist
-        if: steps.file_check_result.outputs.result == 'File does not exist'
-        run: |
-          git config --global user.name 'Jyotibrat'
-          git config --global user.email 'jyotibratb@gmail.com'
-          git add src/Assets/snake.svg
-          git commit -m "Add snake.svg"
-          git push
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: Update snake animations
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
