@@ -39,6 +39,7 @@
 ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)  
 <!-- SKILLS_SECTION_END -->
 <!-- SKILLS_SECTION_END -->
+<!-- SKILLS_SECTION_END -->
 
 ## 🔧 Projects & Automation Workflows
 
