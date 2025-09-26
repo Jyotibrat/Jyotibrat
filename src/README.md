@@ -5,7 +5,7 @@
 👋 Hey there! Welcome to my GitHub. I'm an engineering student specializing in Computer Science with AI & ML, passionate about building innovative projects in software development, machine learning, and web technologies. Here you'll find a mix of personal projects, open-source contributions, and experiments where I explore new ideas and technologies. 🚀
 
 <div align="center">
-  <a href="https://bjyotibrat.vercel.app" target="_blank">
+  <a href="https://bjyotibrat.click" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" />
   </a>
   <a href="https://github.com/Jyotibrat/Portfolio/blob/main/public/Resume.pdf" target="_blank">
